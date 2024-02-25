@@ -1,6 +1,6 @@
 git clone https://github.com/Carvin-Yu/fastapi-observability.git
 
-helm upgrade -n dev fastapi-observability fastapi-observability/ -f fastapi-observability/value-dev.yaml -f fastapi-observability/value.yaml --install --force
+helm upgrade -n dev fastapi-observability fastapi-observability/ -f fastapi-observability/value.yaml --install --force
 
 watch kubectl get all -n dev
 
