@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       port: {{ .Values.service.port }}
       targetPort: 8000
-      nodePort: 33334
+      nodePort: 32767
   type: NodePort
