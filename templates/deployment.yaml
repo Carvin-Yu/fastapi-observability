@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "myapp-chart.fullname" . }}
+  name: {{ include "fastapi-observability.fullname" . }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ include "myapp-chart.fullname" . }}
+      app: {{ include "fastapi-observability.fullname" . }}
   template:
     metadata:
       labels:
-        app: {{ include "myapp-chart.fullname" . }}
+        app: {{ include "fastapi-observability.fullname" . }}
     spec:
       containers:
       - name: {{ .Chart.Name }}
