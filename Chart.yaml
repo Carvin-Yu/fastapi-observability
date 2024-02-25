@@ -1,4 +1,4 @@
 apiVersion: v2
-name: myapp-chart
+name: fastapi-observability
 description: A Helm chart for deploying app-a
 version: 0.1.0
