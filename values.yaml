@@ -1,0 +1,12 @@
+image:
+  repository: ghcr.io/blueswen/fastapi-observability/app
+  tag: latest
+
+service:
+  type: NodePort
+  port: 8000
+  nodePort: 33334
+
+dependencies:
+  loki:
+    enabled: true
