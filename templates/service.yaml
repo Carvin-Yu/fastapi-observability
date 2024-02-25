@@ -7,7 +7,6 @@ spec:
     app: {{ include "fastapi-observability.fullname" . }}
   ports:
     - protocol: TCP
-      port: 8000
+      port: {{ .Values.service.port }}
       targetPort: 8000
-      nodePort: 33334
-  type: NodePort
+  type: LoadBalancer
